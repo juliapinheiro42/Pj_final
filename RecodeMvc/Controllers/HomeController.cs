@@ -23,15 +23,16 @@ namespace RecodeMvc.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Aboutus()
         {
             return View();
         }
 
-        public IActionResult Tradutors()
+        public IActionResult Doc()
         {
             return View();
         }
+
 
         public IActionResult Usuarios()
         {

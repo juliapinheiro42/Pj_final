@@ -26,7 +26,6 @@ namespace RecodeMvc
         public void ConfigureServices(IServiceCollection services)
         {
             string connectionstring = Configuration.GetConnectionString("EmployeeConnection");
-            services.AddDbContext<EmployeeContext>(options => options.UseSqlServer(connectionstring));
             services.AddDbContext<UsuarioContext>(options => options.UseSqlServer(connectionstring));
             services.AddDbContext<TradutorContext>(options => options.UseSqlServer(connectionstring));
             services.AddControllersWithViews();

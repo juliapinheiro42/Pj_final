@@ -2,6 +2,64 @@
     ViewData["Title"] = "Home Page";
 }
 
-<br />
+<head>
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
 
-<h1 class="text-center">Ola Mundo</h1>
+<div class="fundo">
+    <div class="flex-column m-4 p-4">
+        <h3 class="mt-5" style="color: #FF5E1F; font-weight: bolder;  ">Ajude na quebra de barreira linguística</h3>
+        <a class="btn btn-send" style="background:#FF5E1F; color:#fff1d1" asp-controller="Tradutors" asp-action="Create">Clique aqui</a>
+    </div>
+</div>
+<div class="cards p-4 ">
+    <div class=" d-flex justify-content-between align-items-center mt-5 flex-lg-row d-flex mb-3 mb-lg-0">
+        <div class="cardum mb-sm-3 mb-lg-0 mr-2">
+            <a asp-controller="Home" asp-action="Aboutus"> <img src="~/img/jhon-david-3WgkTDw7XyE-unsplash.jpg" /></a>
+        </div>
+        <div class="card1 mb-sm-3 d-sm-block d-none mb-lg-0">
+            <a asp-controller="Document" asp-action="Document"> <img src="~/img/ahmad-azwan-azman-f2FGT-ISlV0-unsplash.jpg" /></a>
+        </div>
+        <div class="card2 mb-sm-3 d-none d-md-block mb-lg-0">
+            <a asp-controller="Document" asp-action="Job"> <img src="~/img/yee-vonn-tan-yCJuu2qFT58-unsplash.jpg" /></a>
+        </div>
+        <div class="card3 mb-sm-3 d-none d-lg-block mb-lg-0">
+            <a asp-controller="Tradutors" asp-action="Index"> <img src="~/img/jonathan-weiss-cr43iPknhlI-unsplash.jpg" /></a>
+        </div>
+    </div>
+</div>
+
+<div id="carousel" class="carousel slide d-flex justify-content-center align-content-center align-items-center" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <a href="https://soubh.uai.com.br/noticias/variedades/ufmg-tem-76-vagas-de-graduacao-para-refugiados-e-apatridas">
+                <img src="~/img/main_ege20122021LC_001.jfif" class="img-car d-block w-100" alt="Universidade ufmg"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>UFMG tem 76 vagas de graduação para refugiados e apátridas</h5>
+                    <p>Para se candidatar é necessário ter feito o Enem entre 2017 e 2021</p>
+                </div>
+        </div>
+        <div class="carousel-item">
+            <a href="https://www.gov.br/pt-br/noticias/assistencia-social/2021/12/governo-federal-fecha-2021-com-mais-de-287-mil-refugiados-venezuelanos-regularizados-pela-operacao-acolhida"><img src="/img/joan-you-WJHSmUo8ioo-unsplash.jpg" class="img-car d-block w-100" alt="Governo federal"/></a>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Governo Federal fecha 2021 com mais de 287 mil refugiados venezuelanos regularizados pela Operação Acolhida</h5>
+                <p>Cerca de 64 mil venezuelanos foram interiorizados e mais de 1 milhão de atendimentos foram realizados na fronteira do Brasil com a Venezuela</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+           <a href="https://oglobo.globo.com/mundo/refugiados-imigrantes-tem-ajuda-de-plataforma-on-line-da-caritas-para-encontrarem-emprego-no-brasil-25327744"> <img src="/img/julie-ricard-i9rzrKo5Vao-unsplash.jpg" class=" img-car d-block w-100" alt="Trabalho de refugiados"></a>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Refugiados e imigrantes têm ajuda de plataforma on-line da Cáritas para encontrarem emprego no Brasil </h5>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev bg-transparent border-0" type="button" data-target="#carousel" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next bg-transparent border-0" type="button" data-target="#carousel" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </button>
+</div>
+

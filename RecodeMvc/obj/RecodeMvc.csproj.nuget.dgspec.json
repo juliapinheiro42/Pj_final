@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\RecodeMvc\\RecodeMvc\\RecodeMvc.csproj": {}
+    "C:\\Users\\Familia de Farias\\Desktop\\Pj_final\\RecodeMvc\\RecodeMvc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\RecodeMvc\\RecodeMvc\\RecodeMvc.csproj": {
+    "C:\\Users\\Familia de Farias\\Desktop\\Pj_final\\RecodeMvc\\RecodeMvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\RecodeMvc\\RecodeMvc\\RecodeMvc.csproj",
+        "projectUniqueName": "C:\\Users\\Familia de Farias\\Desktop\\Pj_final\\RecodeMvc\\RecodeMvc.csproj",
         "projectName": "RecodeMvc",
-        "projectPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\RecodeMvc\\RecodeMvc\\RecodeMvc.csproj",
-        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucas\\OneDrive\\Área de Trabalho\\RecodeMvc\\RecodeMvc\\obj\\",
+        "projectPath": "C:\\Users\\Familia de Farias\\Desktop\\Pj_final\\RecodeMvc\\RecodeMvc.csproj",
+        "packagesPath": "C:\\Users\\Familia de Farias\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Familia de Farias\\Desktop\\Pj_final\\RecodeMvc\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Familia de Farias\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -44,6 +46,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "GoogleMapsApi": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
             "Microsoft.AspNetCore.Mvc.RazorPages": {
               "target": "Package",
               "version": "[2.2.5, )"
@@ -81,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
