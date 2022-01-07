@@ -611,7 +611,55 @@ html {
     margin: 0 auto;
     border-radius: 50%;
     border: 5px solid #FFFDF1;
+    background: url('../img/1630518278405.jfif') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.front__face-photo2 {
+    position: relative;
+    top: -60px;
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 5px solid #FFFDF1;
     background: url('../img/WhatsApp Image 2022-01-06 at 18.38.29.jpeg') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.front__face-photo2 {
+    position: relative;
+    top: -60px;
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 5px solid #FFFDF1;
+    background: url('../img/WhatsApp Image 2022-01-06 at 18.38.29.jpeg') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.front__face-photo3 {
+    position: relative;
+    top: -60px;
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 5px solid #FFFDF1;
+    background: url('../img/pp.jfif') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.front__face-photo4 {
+    position: relative;
+    top: -60px;
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 5px solid #FFFDF1;
+    background: url('../img/pp (1).jfif') no-repeat;
     background-size: cover;
     overflow: hidden;
 }
