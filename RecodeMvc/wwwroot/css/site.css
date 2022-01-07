@@ -2,18 +2,12 @@
 for details on configuring this project to bundle and minify static web assets. */
 
 @font-face {
-    src: url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
-    font-family: "Ubuntu" !important;
-}
-@font-face {
-    src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-    font-family: "Montserrat" !important;
+    src: url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+    font-family: "Work Sans" !important;
 }
 
 
-html {
-    scroll-behavior: smooth;
-}
+
 
 a.navbar-brand {
     white-space: normal;
@@ -24,7 +18,9 @@ a.navbar-brand {
 a {
     color: #FFFDF1;
     text-decoration: none;
+    font-family: "Work Sans" !important;
 }
+
 a:hover{
     color:#ccc5ba;
     text-decoration:none;
@@ -59,7 +55,7 @@ html {
 
 @media (min-width: 768px) {
     html {
-        font-size: 18px;
+        font-size: 17px;
     }
 }
 
@@ -107,7 +103,6 @@ html {
 .cards {
     background-color: #FF5E1F;
     height: 70vh;
-    font-family: "Ubuntu";
 }
 
 .cardum {
@@ -663,8 +658,20 @@ html {
     background-size: cover;
     overflow: hidden;
 }
-        /*Sign up*/
-        .formulario {
+.front__face-photo5 {
+    position: relative;
+    top: -60px;
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 5px solid #FFFDF1;
+    background: url('../img/bb83b243-5218-47ae-86d9-987faf1c83fe.jfif') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+    /*Sign up*/
+    .formulario {
             background:url(../img/mi-pham-ZcA4ai3bRSk-unsplash.jpg);
             height:100vh;
             width:100vw;
