@@ -524,7 +524,7 @@ html {
     overflow: hidden;
 }
 
-.front__text1 {
+    .front__text1 {
     position: relative;
     top: -55px;
     margin: 0 auto;
@@ -670,6 +670,7 @@ html {
     background-size: cover;
     overflow: hidden;
 }
+
     /*Sign up*/
     .formulario {
             background:url(../img/mi-pham-ZcA4ai3bRSk-unsplash.jpg);

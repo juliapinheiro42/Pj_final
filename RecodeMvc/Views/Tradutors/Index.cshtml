@@ -3,57 +3,32 @@
 @{
     ViewData["Title"] = "Index";
 }
+<div class="fundo mb-0">
+    <div class="flex-column m-4 p-5">
+        <h4 style="font-family:'Work sans' !important; color:#FFFDF1; font-weight:bolder;" class="mb-3 mr-3 mt-4">Leer en espanõl</h4>
+        <a asp-controller="Document" asp-action="Duvidas" style="background-color: #FF5E1F; color: #FFFDF1; border-color:none;" class="btn btn-send mr-4">click</a>
+    </div>
+</div>
 
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table h-25 w-25">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Telefone)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Idade)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NivelEspanhol)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
 @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Telefone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Idade)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NivelEspanhol)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
+<div class="card p-4 m-4 d-flex justify-content-center align-items-center" style="width: 18rem; background:#FF5E1F">
+    <img src="/img/Ativo 2.svg" class="card-img-top  w-50" alt="Logomarca">
+    <div style="color:#FFFDF1" class="card-body">
+        <h5 class="card-title text-center">
+            @Html.DisplayFor(modelItem => item.Nome)
+        </h5>
+        <h6 class="card-subtitle text-center">  @Html.DisplayFor(modelItem => item.Idade)</h6>
+        <hr />
+        <p class="card-text text-center">@Html.DisplayFor(modelItem => item.Email)</p>
+        <p class="card-text text-center">@Html.DisplayFor(modelItem => item.Telefone)</p>
+        <p class="card-text text-muted text-center"> @Html.DisplayFor(modelItem => item.NivelEspanhol)</p>
+        <div class="d-flex justify-content-center align-items-center" >
+            <a style="background: #201f1c; color:#FFFDF1" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-send mr-2">Edit</a>
+            <a style="background: #201f1c; color:#FFFDF1" asp-action="Details" asp-route-id="@item.Id" class="btn btn-send mr-2">Details</a>
+            <a style="background: #201f1c; color:#FFFDF1" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-send mr-2">Delete</a>
+        </div>
+    </div>
+</div>
+                         
 }
-    </tbody>
-</table>
+    
