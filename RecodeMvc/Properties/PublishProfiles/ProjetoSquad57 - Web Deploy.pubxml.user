@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Esse arquivo é usado pelo processo de publicação/pacote do seu projeto Web. É possível personalizar o comportamento deste processo
+ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAU/OxkX5GNU2FSBpqTCaOOwAAAAACAAAAAAAQZgAAAAEAACAAAADc41hN4wIsp8icuxuZHcc4G2l1OiltmUwSGO4xy5JoOgAAAAAOgAAAAAIAACAAAADn3FC7anenf0adkFIJdG0bhgAzVPI+Xtp9VbsNa6JKc4AAAAACM5DeLGFL9b1NPTPNbKTfCvOZTDRtKFta7z70KOWjCQ+pZb8HpTscmsq2tvVMUoB+qR6immbfYpOasCV8uGjM0GpL4SwHeX5L6Jd96eQfqkwuEbtURmazKl5oGvVhiSQNGcWm+19jgMdJ/O3/CWY8aHJMT70xo4NkCDN5dppytkAAAADGpL2BGSOhNFb7l4lzVG9wmvQ3sILN9X1i2kFHtz2A5+M/iYAAp5VbGpeGfj5+qjoO1O4gXvEtrn9SsNo93K05</EncryptedPassword>
+    <History>True|2022-01-08T21:46:19.1444330Z;True|2022-01-08T18:41:55.0440881-03:00;True|2022-01-08T18:39:00.4715937-03:00;True|2022-01-08T18:17:57.1461139-03:00;True|2022-01-08T18:15:49.4482496-03:00;True|2022-01-08T18:13:24.1020737-03:00;True|2022-01-08T17:41:11.3791853-03:00;False|2022-01-08T16:37:34.1632872-03:00;False|2022-01-08T16:29:19.5875398-03:00;False|2022-01-08T16:14:08.8546692-03:00;False|2022-01-08T16:07:15.0872262-03:00;True|2022-01-08T05:17:21.4503001-03:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="ProjetoFinal">
+      <Value>Data Source=tcp:squad57.database.windows.net,1433%3bInitial Catalog=Squad57%3bUser Id=adm%40squad57%3bPassword=2009%40Tamoai</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

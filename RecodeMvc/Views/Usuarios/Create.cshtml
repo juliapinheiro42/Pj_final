@@ -1,0 +1,63 @@
+﻿@model RecodeMvc.Models.Usuario
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="formulario">
+   
+    <div class="container mt-1">
+        <div class="row align-items-center justify-content-center m-0 mt-5">
+            <div class="col-sm-5 col-lg-5 col-xl-5 white-bg shadow-rounded-lg ">
+                <h3 style="color: #ff5e1f; font-weight: bold;" class="title lead mb-5 text-center">
+                    Sign up
+                </h3>
+                <hr />
+                <div class="row d-flex flex-column justify-content-center align-items-center">
+                    <div class="col-md-7 mb-5 ">
+                        <form asp-action="Create" class="form-row ">
+                            <div asp-validation-summary="ModelOnly" class="text-danger col-sm-12 col-md-6 mb-5"></div>
+                            <div class="form-group">
+                                <label asp-for="Nome" class="control-label text-muted mb-0 mr-2"></label>
+                                <input asp-for="Nome" class="form-control bg-transparent shadow-none border-0 pl-0 input-field" />
+                                <span asp-validation-for="Nome" class="text-danger d-block border-bottom"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="Email" class="control-label text-muted mb-0 mr-2"></label>
+                                <input type="email" asp-for="Email" id="email" rows="3" class="form-control bg-transparent shadow-none border-0 pl-0 input-field" />
+                                <span asp-validation-for="Email" class="text-danger d-block border-bottom"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Telefone" class="control-label text-muted mb-0 mr-2"></label>
+                                <input type="tel" asp-for="Telefone" id="telefone" rows="3" class="form-control bg-transparent shadow-none border-0 pl-0 input-field" />
+                                <span asp-validation-for="Telefone" class="text-danger d-block border-bottom"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Idade" class="control-label text-muted mb-0 mr-2"></label>
+                                <input type="number" asp-for="Idade" id="telefone" rows="3" class="form-control bg-transparent shadow-none border-0 pl-0 input-field" />
+                                <span asp-validation-for="Idade" class="text-danger d-block border-bottom"></span>
+                            </div>
+
+                            <div class="form-group d-flex flex-column justify-content-center align-items-center">
+                                <input type="submit" value="Enviar" style=" background: #ff5e1f; color:#fffdf1" class="btn  btn-send mr-2" />
+                            </div>
+                            <div class="form-group d-flex flex-column justify-content-center align-items-center text-center">
+                                <span style="color: #201f1c">Se for tradutor cadastre-se aqui!</span>
+                                <a asp-controller="Tradutors" asp-action="Create" style="color:#fffdf1; background:#ff5e1f;" class="btn  btn-send">Tradutors</a>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

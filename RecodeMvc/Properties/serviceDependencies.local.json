@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "type": "secrets.user"
+    },
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/squad57/databases/Squad57",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:ProjetoFinal",
+      "secretStore": "LocalSecretsFile"
+    }
+  }
+}
